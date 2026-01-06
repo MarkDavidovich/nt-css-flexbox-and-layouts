@@ -1,0 +1,30 @@
+.first-container,
+.second-container {
+  display: flex;
+  width: 50%;
+  padding: 2px;
+  gap: 2px;
+  border: 1px solid rgb(212, 212, 212);
+  height: 40px;
+}
+
+.first-container > div,
+.second-container > div {
+  background-color: rgb(100, 149, 236);
+}
+
+.first-container > div {
+  flex-grow: 1;
+}
+
+.second-container > div:first-child {
+  flex-grow: 1;
+}
+
+.second-container > div:nth-child(2) {
+  flex-grow: 2;
+}
+
+.second-container > div:last-child {
+  flex-grow: 3;
+}

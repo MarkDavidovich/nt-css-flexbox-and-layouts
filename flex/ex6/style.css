@@ -1,0 +1,41 @@
+.main-container {
+  margin: 10px;
+  border: 5px solid rgb(240, 128, 128);
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block: 200px;
+  margin-inline: 200px;
+}
+
+.shape {
+  min-width: 180px;
+  min-height: 180px;
+  background-color: rgb(240, 128, 128);
+  border-radius: 50%;
+}
+
+.bottom-container {
+  border-top: 5px solid rgb(240, 128, 128);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.right-shapes {
+  display: flex;
+  gap: 15px;
+}
+
+.line {
+  width: 100px;
+  height: 20px;
+  background-color: rgb(240, 128, 128);
+}

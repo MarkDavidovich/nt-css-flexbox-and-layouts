@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  height: 500px;
+  border: 2px solid lightgray;
+}
+.sub-container:first-child {
+  border-right: 2px solid lightgray;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.shape {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(100, 149, 236);
+}
+
+.text {
+  padding: 30px;
+}
