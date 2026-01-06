@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  padding-inline: 30px;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgb(101, 126, 233), rgb(117, 75, 162));
+  color: white;
+}
+
+.header-right,
+.header-left {
+  display: flex;
+  gap: 30px;
+}
+
+.header-right > div,
+.header-left > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.mid-section {
+  width: 100%;
+  height: 100%;
+}
+
+.mid-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 25px 20px 0;
+  padding: 25px 30px 25px;
+  gap: 20px;
+  color: rgb(51, 51, 51);
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  width: 200px;
+  color: rgb(51, 51, 51);
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .dropdown,
+.dropdown > div:hover {
+  display: flex;
+}
+
+.dropdown > div {
+  padding: 10px 20px 10px;
+}
+
+.dropdown > div:not(:last-child) {
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.menu-item {
+  position: relative;
+}
