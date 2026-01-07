@@ -28,7 +28,7 @@ body {
 .header-right,
 .header-left {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .header-right > div,
@@ -76,12 +76,23 @@ body {
 }
 
 .menu-item:hover .dropdown,
-.dropdown > div:hover {
+.dropdown > li:hover {
   display: flex;
 }
 
-.dropdown > div {
+.menu-item:hover {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item:hover > .dropdown > li:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown > li {
   padding: 10px 20px 10px;
+  list-style: none;
 }
 
 .dropdown > div:not(:last-child) {
@@ -90,4 +101,5 @@ body {
 
 .menu-item {
   position: relative;
+  padding-inline: 10px;
 }
