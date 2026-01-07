@@ -40,7 +40,8 @@ body {
   flex-direction: column;
   background-color: rgb(248, 249, 250);
   padding: 20px;
-  flex: 1;
+  /* flex: 1; */
+  width: 200px;
 }
 
 .sub-title {
@@ -56,6 +57,10 @@ body {
   height: 40%;
   justify-content: space-evenly;
   color: rgb(108, 117, 125);
+}
+
+.nav-options > li {
+  list-style: none;
 }
 
 .mid-section {
@@ -92,8 +97,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(248, 249, 250);
-  flex: 1;
+  /* flex: 1; */
   /* padding: 20px; */
+  width: 200px;
   gap: 10px;
   padding: 20px 20px 0;
 }
