@@ -21,10 +21,6 @@
   flex-grow: 1;
 }
 
-.second-container > div:nth-child(2) {
+.second-container > div {
   flex-grow: 2;
-}
-
-.second-container > div:last-child {
-  flex-grow: 3;
 }

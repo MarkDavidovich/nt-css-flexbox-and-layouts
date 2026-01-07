@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, rgb(101, 126, 233), rgb(117, 75, 162));
+}
+
+form {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+}
+
+.title > :last-child {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+}
+
+section {
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+section:last-of-type {
+  gap: 5px;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.message-container {
+  margin-top: 10px;
+}
+
+.checkbox-container > label {
+  padding-right: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container > input {
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.buttons-container > input:first-child {
+  background-color: rgb(248, 249, 250);
+  border: 1px solid rgb(225, 229, 233);
+  color: rgb(51, 51, 51);
+}
+
+.buttons-container > input:last-child {
+  background-image: linear-gradient(to bottom right, rgb(73, 176, 253), rgb(4, 239, 254));
+  border: none;
+  color: white;
+}
+
+.field-half {
+  width: 50%;
+}
+
+.field label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  height: 30px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+textarea {
+  height: 50px;
+  padding-top: 5px;
+  font-family: "Courier New", Courier, monospace;
+}

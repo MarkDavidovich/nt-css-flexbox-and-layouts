@@ -6,5 +6,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <form>
+      <div class="title">
+        <h1>Contact Form</h1>
+        <p>Get in touch with us</p>
+      </div>
+      <section>
+        <div class="field-half">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" />
+        </div>
+        <div class="field-half">
+          <label for="lname">Last Name</label>
+          <input type="text" />
+        </div>
+      </section>
+      <div>
+        <label for="emailadd">Email Address</label>
+        <input type="email" id="emailadd" />
+      </div>
+      <section>
+        <div class="field-half">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option selected>Select a topic</option>
+            <option>Suggestions/Feedback</option>
+            <option>Technical Support</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field-half">
+          <label for="priority">Priority</label>
+          <select id="priority">
+            <option selected>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+          </select>
+        </div>
+      </section>
+      <div class="message-container">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us how we can help..."></textarea>
+      </div>
+      <section>
+        <p>Contact Preferences</p>
+        <div class="checkbox-container">
+          <input type="checkbox" id="updates" />
+          <label for="updates">Email Updates</label>
+          <input type="checkbox" id="phone" />
+          <label for="phone">Phone Follow-up</label>
+          <input type="checkbox" id="phone" />
+          <label for="phone">Newsletter</label>
+        </div>
+      </section>
+      <div class="buttons-container">
+        <input type="button" value="Save Draft" />
+        <input type="submit" value="Send Message" />
+      </div>
+    </form>
+  </body>
 </html>
